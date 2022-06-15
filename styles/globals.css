@@ -512,7 +512,8 @@ span.text-red {
 }
 .quantity-desc {
   border: 1px solid gray;
-  padding: 6px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .quantity-desc span {
   font-size: 16px;
@@ -520,11 +521,11 @@ span.text-red {
   cursor: pointer;
 }
 .quantity-desc .minus {
-  border-right: 1px solid gray;
   color: #f02d34;
 }
 .quantity-desc .num {
   border-right: 1px solid gray;
+  border-left: 1px solid gray;
   font-size: 20px;
 }
 .quantity-desc .plus {
@@ -603,6 +604,11 @@ span.text-red {
 }
 .product-max-qty {
   margin-top: 10px;
+}
+
+.image-container {
+  width: 550px;
+  height: 550px;
 }
 
 @media screen and (max-width: 800px) {
@@ -722,7 +728,7 @@ span.text-red {
     font-size: 20px;
   }
   .track {
-    animation: marquee 10s linear infinite;
+    animation: marquee 15s linear infinite;
     width: 550%;
   }
   .success-wrapper,
@@ -744,5 +750,9 @@ span.text-red {
   .btn-container {
     width: 300px;
     margin: auto;
+  }
+  .image-container {
+    width: 350px;
+    height: 350px;
   }
 }
