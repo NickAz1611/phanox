@@ -17,7 +17,7 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <img
-            className="image-container"
+            className="product-detail-image"
             src={urlFor(image && image[index])}
           />
           <div className="small-images-container">
