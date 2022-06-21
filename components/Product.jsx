@@ -3,7 +3,6 @@ import React from "react";
 import { urlFor } from "../lib/client";
 
 const Product = ({ product: { image, slug, name, price } }) => {
-  console.log(image);
   return (
     <div>
       <Link href={`/product/${slug.current}`}>
@@ -16,7 +15,7 @@ const Product = ({ product: { image, slug, name, price } }) => {
             height={250}
           />
           <p className="product-name">{name}</p>
-          <p className="product-price">${price}</p>
+          <p className="product-price">₹{price}</p>
         </div>
       </Link>
     </div>
