@@ -5,6 +5,7 @@ const stripe = Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const reqData = req.body;
+    console.log(reqData);
     try {
       const params = {
         submit_type: "pay",
@@ -13,8 +14,8 @@ export default async function handler(req, res) {
         billing_address_collection: "auto",
         shipping_options: [
           {
-            shipping_rate: "shr_1LD4UeSF68wNU2GmztoY9jhk",
-            shipping_rate: "shr_1LD4VESF68wNU2GmLK4pk03r",
+            shipping_rate: "shr_1LD6cISF68wNU2GmaRA7i0dz",
+            shipping_rate: "shr_1LD6csSF68wNU2GmnX6UFgkx",
           },
         ],
         line_items: reqData.map((item) => {
