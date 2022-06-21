@@ -15,6 +15,7 @@ const ProductDetails = ({ product, products }) => {
   const [index, setIndex] = useState(0);
 
   const { image, name, price, details } = product;
+
   return (
     <div>
       <div className="product-detail-container">
